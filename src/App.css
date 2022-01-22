@@ -1,38 +1,73 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  /* border: 1px solid black; */
+  width: 700px;
+  margin: 50px auto;
+  height: 600px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand-logo span {
+  vertical-align: top;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0px 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.brand-logo img {
+  height: 40px;
+}
+.steps {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* min-width: 300px; */
+  max-width: 350px;
+  margin: 100px auto;
+  justify-content: space-around;
+}
+.step1-fill { 
+  /* background-color:#5A4AD1; */
+  /* border: 1px solid #5A4AD1; */
+  color: black;
+  display: flex;
+  height: fit-content;
+}
+.step2,.step3,.step4 { 
+  /* background-color:#5A4AD1; */
+  /* border: 1px solid #5A4AD1; */
+  color: black;
+  display: flex;
+  height: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.progress1-fill,.progress2-fill,.progress3-fill,.progress4-fill{
+     margin: 20px 0px;
+     border: 1px solid black;
+     /* transform: rotate(90deg); */
+     height: 0px;
+     width: 40px;
+}
+.progress1,.progress2,.progress3,.progress4{
+  margin: 20px 0px;
+  border: 1px solid #dfe6e9;
+  /* transform: rotate(90deg); */
+  height: 0px;
+  width: 40px;
+}
+.currentPageNumber-fill{
+    background-color:#5A4AD1;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color:white
+}
+.currentPageNumber{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color:black;
+    border: 2px solid #dfe6e9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

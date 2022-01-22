@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Progress from './Components/Progress/Progress';
+import Form from './Components/Forms/Form';
 
-function App() {
+function App(props) {
+  const [page, setPage] = React.useState(1);
+
+  const goToNextPage=()=>{
+    setPage(page+1)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+        <div className='brand-logo'>
+          <img alt="cutshort best place to find the right talent" src='https://cdn.cutshort.io/public/images/og-new-logo.jpg' />
+          <span>CutShort</span>
+        </div>
+        <Progress page={page}/>
+        <Form page={page} goToNextPage={goToNextPage}/>
+      </div>
     </div>
   );
 }

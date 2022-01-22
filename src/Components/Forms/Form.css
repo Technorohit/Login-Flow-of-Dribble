@@ -1,0 +1,113 @@
+.form-container{
+    margin-top: 100px auto;
+    max-width: 650px;
+}
+.subtitle{
+    font-weight: 400;
+    color: grey;
+}
+.title{
+    word-spacing: 2px;
+    font-size: 30px;
+    margin: 0px;
+}
+form{
+    width: 400px;
+    margin: 50px auto;
+}
+input{
+    display: block;
+    text-align: left;
+    border: 1px solid #dfe6e9;
+    width: 350px;
+    border-radius: 3px;
+    padding:15px;
+    margin: 10px 0px 30px;
+    font-size: 14px;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:lightslategray;
+    opacity: 1; /* Firefox */
+  }
+label{
+    margin: 10px 0px;
+    text-align: left;
+    display: block;
+}
+button{
+    background-color:#5A4AD1;
+    border: none;
+    padding: 15px 0px;
+    width: 385px;
+    margin:0px 0px 0px 0px;
+    border-radius: 3px;
+    color:#dfe6e9;
+    font-weight: 600;
+    font-size: 14px;
+}
+.url-disabled{
+    width: 40%;
+    border-right: none;
+    margin-top: 0px;
+}
+.url-input{
+    display: inline;
+    width: 60%;
+    border-top-left-radius: 0%;
+    margin-top: 0px;
+}
+.url-field{
+    margin-top:0px;
+    display: flex;
+}
+.cards{
+display: flex;
+margin: 50px auto;
+justify-content: space-between;
+width: 95%;
+}
+.card1,.card2{
+    height: 150px;
+    width: 150px;
+    border:1px solid  #dfe6e9;;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 5px;
+}
+.card1-selected,.card2-selected{
+    height: 150px;
+    width: 150px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 5px;
+    border:1px solid #5A4AD1;
+}
+.card-img{
+    height: 28px;
+    width: 28px;
+    float: left;
+} 
+.card-title{
+    display: block;
+    text-align: left;
+    font-weight: 600;
+}
+.card-descript{
+    color: gray;
+}
+.checkmark{
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 20px auto 40px;
+   background-color: #5A4AD1;
+   color: white;
+   border-radius: 50%;
+}
