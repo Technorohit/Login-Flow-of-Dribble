@@ -2,7 +2,6 @@
   text-align: center;
 }
 .container {
-  /* border: 1px solid black; */
   width: 700px;
   margin: 50px auto;
   height: 600px;
@@ -18,37 +17,24 @@
 }
 .steps {
   display: flex;
-  /* min-width: 300px; */
   max-width: 350px;
   margin: 100px auto;
   justify-content: space-around;
 }
-.step1-fill { 
-  /* background-color:#5A4AD1; */
-  /* border: 1px solid #5A4AD1; */
+.step1,.step2,.step3,.step4 { 
   color: black;
   display: flex;
   height: fit-content;
 }
-.step2,.step3,.step4 { 
-  /* background-color:#5A4AD1; */
-  /* border: 1px solid #5A4AD1; */
-  color: black;
-  display: flex;
-  height: fit-content;
-}
-
-.progress1-fill,.progress2-fill,.progress3-fill,.progress4-fill{
+.progress-fill{
      margin: 20px 0px;
      border: 1px solid black;
-     /* transform: rotate(90deg); */
      height: 0px;
      width: 40px;
 }
-.progress1,.progress2,.progress3,.progress4{
+.progress{
   margin: 20px 0px;
   border: 1px solid #dfe6e9;
-  /* transform: rotate(90deg); */
   height: 0px;
   width: 40px;
 }
@@ -71,3 +57,14 @@
     border: 2px solid #dfe6e9;
 }
 
+@media screen and (max-width:468px) {
+  .container{
+    width: 100%;
+  }
+  .steps{
+    width: 300px;
+  }
+  .progress,.progress-fill{
+    width: 20px;
+  }
+}

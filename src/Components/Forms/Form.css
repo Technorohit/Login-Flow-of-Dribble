@@ -1,6 +1,6 @@
 .form-container{
     margin-top: 100px auto;
-    max-width: 650px;
+    width: 650px;
 }
 .subtitle{
     font-weight: 400;
@@ -111,3 +111,21 @@ width: 95%;
    color: white;
    border-radius: 50%;
 }
+
+@media screen and (max-width:768px) {
+   .form-container{
+       width: 100%;
+   }
+   form,input,label,button{
+       width: 90%;
+       border:1%;
+   }
+   button{
+       padding:20px 0;
+       width: 98%;
+   }
+   .card1,.card2,.card1-selected,.card2-selected{
+       width: 35%;
+       height: 15vh;
+   }
+  }
